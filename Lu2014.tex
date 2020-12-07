@@ -1,0 +1,52 @@
+\documentclass{bilidoc}
+
+\geometry{
+  a4paper,%
+  left = 1.5cm,%
+  right = 1.5cm,%
+  top = 2.0cm,%
+  bottom = 2.0cm%
+}%
+
+\usepackage{ulem}
+
+\title{\textbf{\href{https://doi.org/10.1061/(ASCE)GT.1943-5606.0001206}{Static Liquefaction of Sands under Isotropically and $K_0$-Consolidated Undrained Triaxial Conditions }\\各向同性和$K_0$固结不排水三轴条件下砂土的静态液化}}
+
+\author{Xilin Lu \thanks{
+    Associate Professor, Dept. of Geotechnical Engineering and Key Laboratory of Geotechnical and Underground Engineering of the Ministry of Education, Tongji Univ., Shanghai 200092, China; formerly, Visiting Associate Professor, Dept. of Mechanical and Civil Engineering, California Institute of Technology, Pasadena, CA 91125 (corresponding author). E-mail: \url{xilinlu@tongji.edu.cn}.
+} \and Maosong Huang \thanks{
+    Professor and Chair, Dept. of Geotechnical Engineering and Key Laboratory of Geotechnical and Underground Engineering of the Ministry of Education, Tongji Univ., Shanghai 200092, China.
+}}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{Abstract}{Static liquefaction; Undrained triaxial tests; Critical state; Second-order work.}{静态液化； 不排水三轴试验； 临界状态； 二阶功。}
+
+    By using the state-dependent strength criterion and dilatancy function, a state-dependent nonassociated elastoplasticity hardening model was proposed to unify modeling the constitutive relationships of sands with different initial void ratios. According to the second-order work theory, the criteria for predicting the potential instability and static liquefaction of sands were obtained. The proposed model and criteria were used to predict a series of isotropically consolidated and K0-consolidated undrained triaxial tests. The results showed that the potentially unstable point and the onset of static liquefaction under undrained conditions coincided with the attainment of a deviatoric stress peak in very loose sand, whereas, with the decrease of the initial void ratio, the onset of static liquefaction fell behind the potential instability. When the sand specimen was dense enough, static liquefaction did not occur, although the stress state was located inside of the potentially unstable region. The potential instability and static liquefaction occurred before the effective stress reached the failure surface, and they were the precursors though not the results of the sand failures.
+
+    \switchcolumn
+
+    利用状态相关的强度准则和剪胀函数，提出了状态相关的非关联弹塑性硬化模型，以统一建模具有不同初始孔隙率的砂土的本构关系。根据二阶功理论，获得了预测砂土潜在不稳定性和静态液化的标准。提出的模型和标准用于预测一系列各向同性固结和K0固结不排水三轴试验。结果表明，在不排水的条件下，潜在的不稳定点和静态液化的开始与在非常松散的砂土中获得的偏应力峰值相吻合，而随着初始孔隙率的降低，静态液化开始时间滞后于潜在失稳时间。当砂土样品足够致密时，尽管应力状态位于潜在不稳定区域的内部，但不会发生静态液化。在有效应力到达破坏面之前就发生了潜在的不稳定性和静态液化，尽管不是砂土破坏的结果，但它们是先兆。
+    
+\end{Abstract}
+
+\input{sections/introduction.tex}
+\input{sections/critical-state-theory.tex}
+\input{sections/hardening-model.tex}
+\input{sections/p-q-form.tex}
+\input{sections/K0-consolidated-condition.tex}
+\input{sections/criteria-of-static-liquefaction.tex}
+\input{sections/experimenta-predictions.tex}
+\input{sections/conclusions.tex}
+\input{sections/acknowledgments.tex}
+
+\bibliographystyle{plainnat}
+\bibliography{Lu2014.bib}
+
+\includepdf[pages=1-9]{Static Liquefaction of Sands under Isotropically and K0-Consolidated Undrained Triaxial Conditions.pdf}
+    
+\end{document}

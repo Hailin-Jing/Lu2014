@@ -1,0 +1,207 @@
+\begin{ParaColumn}[\bisection*{State-Dependent Mohr-Coulomb Hardening Model}{状态相关的摩尔库伦硬化模型}]
+    
+    Considering the theoretical prediction of the onset of static liquefaction relies on the constitutive relationships, a sophisticated model needs to be developed to capture the instability characteristic of the sands with different initial material states. Here, for simplicity, the constitutive model is proposed on the basis of the widely used elastoplastic Mohr-Coulomb hardening model. The yield function is
+    
+    \switchcolumn
+
+    考虑到静态液化开始的理论预测依赖于本构关系，需要建立一个复杂的模型来捕捉不同初始物质状态的砂土的失稳特性。为简便起见，在广泛应用的摩尔-库仑强化模型的基础上，提出了本构模型。屈服函数为
+
+    \CrossColumnText{
+        \begin{align}
+            F=q-M p^{\prime}=0
+            \label{equation:3}
+        \end{align}
+    }
+    \switchcolumn*
+
+    \noindent
+    where $p^{\prime}=\sigma_{i i} / 3-u$; $q=\sqrt{3 J_{2}}=\sqrt{3 s_{i j}^{\prime} s_{i j}^{\prime} / 2}$; $s_{i j}^{\prime}=\boldsymbol{\sigma}_{i j}^{\prime}-\delta_{i j} p^{\prime}$; $\boldsymbol{\sigma}_{i j}^{\prime}=\boldsymbol{\sigma}_{i j}-u$; $u=$ pore-water pressure; and $\delta_{i j}=$ Kronecker delta.
+
+    \switchcolumn
+
+    \noindent
+    其中$p^{\prime}=\sigma_{i i} / 3-u$；$q=\sqrt{3 J_{2}}=\sqrt{3 s_{i j}^{\prime} s_{i j}^{\prime} / 2}$；$s_{i j}^{\prime}=\boldsymbol{\sigma}_{i j}^{\prime}-\delta_{i j} p^{\prime}$; $\boldsymbol{\sigma}_{i j}^{\prime}=\boldsymbol{\sigma}_{i j}-u$；$u$为孔隙水压力，$\delta_{i j}$为克罗内克符号。
+
+    \switchcolumn*
+
+    The evolution of $M$ is assumed to follow the hyperbolic law \citep{Pietruszczak1987,Huang2010}
+
+    \switchcolumn
+
+    假设$M$的演化遵循双曲线规律\citep{Pietruszczak1987,Huang2010}
+
+    \CrossColumnText{
+        \begin{align}
+            M=M_{p} \frac{\varepsilon_{s}^{p}}{A+\varepsilon_{s}^{p}}
+        \end{align}
+    }
+    \switchcolumn*
+
+    \noindent
+    where the equivalent plastic shear strain $\varepsilon_{s}^{p}=\sqrt{2 e_{i j} e_{i j} / 3}$; $e_{i j}=\varepsilon_{i j}-\delta_{i j} \varepsilon_{i i}/3$ and $A=$ fitting parameter. The peak value of stress ratio $M_{p}$ is assumed to be state-dependent and can be expressed as \citep{Manzari1997}
+
+    \switchcolumn
+
+    \noindent
+    其中等效塑性剪切应变$\varepsilon_{s}^{p}=\sqrt{2 e_{i j} e_{i j} / 3}$；$e_{i j}=\varepsilon_{i j}-\delta_{i j} \varepsilon_{i i}/3$以及$A$为拟合参数。 假定应力比$M_{p}$的峰值与状态有关，可以表示为\citep{Manzari1997}
+
+    \CrossColumnText{
+        \begin{align}
+            M_{p}=M_{c s} \exp \left(-n^{b} \psi\right)
+            \label{equation:5}
+        \end{align}
+    }
+    \switchcolumn*
+
+    The plastic dilatancy is
+
+    \switchcolumn
+    
+    塑性膨胀为
+
+    \CrossColumnText{
+        \begin{align}
+            D=\frac{d \varepsilon_{v}^{p}}{d \varepsilon_{s}^{p}}
+        \end{align}
+    }
+    \switchcolumn*
+
+    \noindent
+    A framework is needed to define a unique relationship between the stress ratio and the dilatancy. To capture the influence of the material state, the state parameter should be included in the stress-dilatancy function, and it could be formulated as \citep{Li2000,Gajo2001}
+
+    \switchcolumn
+
+    \noindent
+    需要一个框架来定义应力比和膨胀率之间的唯一关系。 为了捕获物质状态的影响，应将状态参数包括在应力剪胀函数中，并且可以将其表达为\citep{Li2000,Gajo2001}。
+
+    \CrossColumnText{
+        \begin{align}
+            D=A_{d}\left[M_{d}-M\right]=A_{d}\left[M_{c s} \exp \left(n^{d} \psi\right)-M\right]
+            \label{equation:7}
+        \end{align}
+    }
+    \switchcolumn*
+
+    \noindent
+    where $A_{d}=d_{0} / M_{c s}$; and $n^{d}$ and $d_{0}$ = material parameters.
+
+    \switchcolumn
+
+    \noindent
+    式中$A_{d}=d_{0} / M_{c s}$；$n^{d}$和$d_{0}$为材料常数。
+
+    \switchcolumn*
+
+    For simplicity, here Ad is assumed to be 1, and then \enautoref{equation:7} is the same for the dilatancy function in the Cam-clay model and can be formulated equivalently by using the plastic potential function
+
+    \switchcolumn
+
+    为简单起见，此处假设$A_d$为1，然后对于剑桥粘土模型中的剪胀函数，\cnautoref{equation:7}相同，并且可以使用塑性势函数等效地公式化
+
+    \CrossColumnText{
+        \begin{align}
+            G=q+M_{d} p^{\prime} \ln \frac{p^{\prime}}{p_{0}}=0
+            \label{equation:8}
+        \end{align}
+    }
+    \switchcolumn*
+
+    \noindent
+    From Eqs. \ref{equation:3} and \ref{equation:8}, the gradient of yield function and plastic potential function to $p^\prime$ and $q$ are
+
+    \switchcolumn
+
+    \noindent
+    由\cnautoref{equation:3}和\cnautoref{equation:8}，屈服函数和塑性势函数到$p^\prime$和$q$的梯度为
+
+    \CrossColumnText{
+        \begin{align}
+            \begin{aligned}
+                \frac{\partial F}{\partial p^{\prime}}&=-M \\
+                \frac{\partial F}{\partial q}&=1\\
+            \end{aligned}
+            \label{equation:9}
+        \end{align}
+
+        \begin{align}
+            \begin{aligned}
+                \frac{\partial Q}{\partial p^{\prime}}&=M_{d}-\frac{q}{p^{\prime}} \\
+                \frac{\partial Q}{\partial q}&=1
+            \end{aligned}
+            \label{equation:10}
+        \end{align}
+    }
+    \switchcolumn*
+
+    The rate form of elastoplasticity constitutive relationship is
+
+    \switchcolumn
+
+    弹塑性本构关系的速率形式为
+
+    \CrossColumnText{
+        \begin{align}
+            \dot{\sigma}_{i j}=\mathbf{D}_{i j k l}^{e p} \dot{\varepsilon}_{k l}
+            \label{equation:11}
+        \end{align}
+    }
+    \switchcolumn*
+
+    \noindent
+    where the elastoplastic modulus is
+
+    \switchcolumn
+
+    \noindent
+    弹塑性模量为
+
+    \CrossColumnText{
+        \begin{align}
+            \begin{aligned}
+                \mathbf{D}_{i j k l}^{e p}=\mathbf{D}_{i j k l}^{e}-\mathbf{D}_{i j k l}^{p}=&\left(K-\frac{2}{3} G\right) \delta_{i j} \delta_{k l}+G\left(\delta_{i k} \delta_{j l}+\delta_{i l} \delta_{j k}\right) \\
+                &-\dfrac{D_{i j m n}^{e} \dfrac{\partial Q}{\partial \sigma_{m n}^{\prime}}\left(\dfrac{\partial F}{\partial \sigma_{p q}^{\prime}}\right)^{T} D_{p q k l}^{e}}{\left(\dfrac{\partial F}{\partial \sigma_{u v}^{\prime}}\right)^{T} D_{u v s t}^{e} \dfrac{\partial Q}{\partial \sigma_{s t}^{\prime}}+H_{p}}
+        \end{aligned}
+        \end{align}
+    }
+    \switchcolumn*
+
+    \noindent
+    The hardening modulus is
+
+    \switchcolumn
+
+    \noindent
+    硬化模量为
+
+    \CrossColumnText{
+        \begin{align}
+            H_{p}=-\frac{\partial F}{\partial M} \frac{\partial M}{\partial \varepsilon_{s}^{p}}=p^{\prime} M_{p} \frac{A}{\left(A+\varepsilon_{e p}\right)^{2}}
+        \end{align}
+    }
+    \switchcolumn*
+
+    The bulk modulus K and shear modulus G are related to the state of sand and can be expressed by the current void ratio e as \citep{ERichart1970}
+
+    \switchcolumn
+
+    体积模量$K$和剪切模量$G$与砂的状态有关，可以用当前的孔隙率$e$表示为\citep{ERichart1970}
+
+    \CrossColumnText{
+        \begin{align}
+            \begin{aligned}
+            K&=\frac{2(1+\nu)}{3(1-2 \nu)} G \\
+            G&=G_{0} p_{a t} \frac{(2.97-e)^{2}}{1+e} \sqrt{\frac{p^{\prime}}{p_{a t}}}
+            \end{aligned}
+            \label{equation:14}
+        \end{align}
+    }
+    \switchcolumn*
+
+    \noindent
+    where $G_0$ = regression constant of the elastic shear modulus; and $\nu$ = Poisson’s ratio.
+
+    \switchcolumn
+
+    \noindent
+    其中$G_0$为弹性剪切模量的回归常数；$\nu$为泊松比。
+\end{ParaColumn}

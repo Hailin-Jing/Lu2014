@@ -1,0 +1,131 @@
+\begin{ParaColumn}[\bisection*{$p-q$ Form under Triaxial Condition}{三轴条件下的$p-q$形式}]
+    
+    To simulate the stress-strain relationship of soil under the triaxial condition conveniently, \enautoref{equation:11} is rewritten into $p-q$ form as
+
+    \switchcolumn
+
+    为了方便地模拟三轴条件下土体的应力-应变关系，可将\cnautoref{equation:11}被重写为$p-q$形式为
+
+    \CrossColumnText{
+        \begin{align}
+            \begin{aligned}
+            \dot{p}^{\prime}=K \dot{\varepsilon}_{v}^{e}=K\left(\dot{\varepsilon}_{v}-\dot{\lambda} \frac{\partial Q}{\partial p^{\prime}}\right) \\
+            \dot{q}=3 G \dot{\varepsilon}_{s}^{e}=3 G\left(\dot{\varepsilon}_{s}-\dot{\lambda} \frac{\partial Q}{\partial q}\right)
+            \end{aligned}
+            \label{equation:15}
+        \end{align}
+    }
+    \switchcolumn*
+
+    \noindent
+    where $\varepsilon_{s}=2\left(\varepsilon_{a}-\varepsilon_{r}\right) / 3$; $\varepsilon_{v}=2 \varepsilon_{a}+\varepsilon_{r}$; $p^{\prime}=\left(\sigma_{a}^{\prime}+2 \sigma_{r}^{\prime}\right) / 3$; $q=\sigma_{a}^{\prime}-\sigma_{r}^{\prime}$; $\varepsilon_{a}$ and $\varepsilon_{r}=$ axial and radial strains; and $\sigma_{a}^{\prime}$ and $\sigma_{r}^{\prime}=$ axial and radial effective stresses.
+
+    \switchcolumn
+
+    \noindent
+    式中$\varepsilon_{s}=2\left(\varepsilon_{a}-\varepsilon_{r}\right) / 3$； $\varepsilon_{v}=2 \varepsilon_{a}+\varepsilon_{r}$; $p^{\prime}=\left(\sigma_{a}^{\prime}+2 \sigma_{r}^{\prime}\right) / 3$； $q=\sigma_{a}^{\prime}-\sigma_{r}^{\prime}$； $\varepsilon_{a}$和$\varepsilon_{r}$为轴向和径向应变；$\sigma_{a}^{\prime}$和$\sigma_{r}^{\prime}$为轴向和径向有效应力。
+
+    \switchcolumn*
+
+    The plastic multiplier could be obtained from the consistency condition and can be expressed as
+
+    \switchcolumn
+
+    可从一致性条件获得塑性乘数，并表示为
+
+    \CrossColumnText{
+        \begin{align}
+            \dot{\lambda}=\frac{K \dfrac{\partial F}{\partial p^{\prime}} \dot{\varepsilon}_{v}+3 G \dfrac{\partial F}{\partial q} \dot{\varepsilon}_{s}}{H_{p}+K \dfrac{\partial F}{\partial p^{\prime}} \dfrac{\partial Q}{\partial p^{\prime}}+3 G \dfrac{\partial F}{\partial q} \dfrac{\partial Q}{\partial q}}
+            \label{equation:16}
+        \end{align}
+    }
+    \switchcolumn*
+
+    \noindent
+    Using Eqs. \ref{equation:9} and \ref{equation:10}, \enautoref{equation:16} becomes
+
+    \switchcolumn
+
+    \noindent
+    联立\cnautoref{equation:9}和\cnautoref{equation:10}，\cnautoref{equation:16}变为
+
+    \CrossColumnText{
+        \begin{align}
+            \dot{\lambda}=\frac{-K M \dot{\varepsilon}_{v}+3 G \dot{\varepsilon}_{s}}{H_{p}+K M\left(M-M_{d}\right)+3 G}
+        \end{align}
+    }
+    \switchcolumn*
+
+    The deviatoric and volumetric plastic strain rates are
+
+    \switchcolumn
+
+    变形和体积塑性应变率分别为
+
+    \CrossColumnText{
+        \begin{align}
+            \begin{array}{c}
+            \dot{\varepsilon}_{v}^{p}=\dot{\lambda} \dfrac{\partial Q}{\partial p^{\prime}}=\dot{\lambda} M_{d}\left(\ln \dfrac{p^{\prime}}{p_{0}}+1\right)=\dot{\lambda}\left(M_{d}-M\right) \\
+            \dot{\varepsilon}_{s}^{p}=\dot{\lambda} \dfrac{\partial Q}{\partial q}=\dot{\lambda}
+            \end{array}
+            \label{equation:18}
+        \end{align}
+    }
+    \switchcolumn*
+
+    \noindent
+    By inserting \enautoref{equation:18} into \enautoref{equation:18}, one gets
+
+    \switchcolumn
+
+    \noindent
+    将\cnautoref{equation:18}代入\cnautoref{equation:15}，得到
+
+    \CrossColumnText{
+        \begin{align}
+            \begin{array}{c}
+            \dot{p}^{\prime}=K\left[\dot{\varepsilon}_{v}-\dot{\lambda}\left(M_{d}-M\right)\right] \\
+            \dot{q}=3 G\left(\dot{\varepsilon}_{s}-\dot{\lambda}\right)
+            \end{array}
+        \end{align}
+    }
+
+    \switchcolumn*
+
+    After arrangement, the rate form of the constitutive relationship is
+
+    \switchcolumn
+
+    整理后，本构关系的比率形式为
+
+    \CrossColumnText{
+        \begin{align}
+            \left\{\begin{array}{c}
+            \dot{p}^{\prime} \\
+            \dot{q}
+            \end{array}\right\}=\mathbf{D}_{p q}^{e p}\left\{\begin{array}{l}
+            \dot{\varepsilon}_{v} \\
+            \dot{\varepsilon}_{s}
+            \end{array}\right\}
+            \label{equation:20}
+        \end{align}
+    }
+    \switchcolumn*
+
+    \noindent
+    where
+
+    \switchcolumn
+
+    \noindent
+    式中
+
+    \CrossColumnText{
+        \begin{align*}
+            \mathbf{D}_{p q}^{e p}=\left[\begin{array}{cc}
+            K+\dfrac{K^{2} M\left(M_{d}-M\right)}{H_{p}+K M\left(M-M_{d}\right)+3 G} & \dfrac{-3 K G\left(M_{d}-M\right)}{H_{p}+K M\left(M-M_{d}\right)+3 G} \\
+            \dfrac{3 K G M}{H_{p}+K M\left(M-M_{d}\right)+3 G} & 3 G-\dfrac{9 G^{2}}{H_{p}+K M\left(M-M_{d}\right)+3 G}
+            \end{array}\right]
+        \end{align*}
+    }
+\end{ParaColumn}
