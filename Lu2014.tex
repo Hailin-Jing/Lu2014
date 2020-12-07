@@ -9,6 +9,7 @@
 }%
 
 \usepackage{ulem}
+\usepackage{multicol}
 
 \title{\textbf{\href{https://doi.org/10.1061/(ASCE)GT.1943-5606.0001206}{Static Liquefaction of Sands under Isotropically and $K_0$-Consolidated Undrained Triaxial Conditions }\\各向同性和$K_0$固结不排水三轴条件下砂土的静态液化}}
 
@@ -45,7 +46,9 @@
 \input{sections/acknowledgments.tex}
 
 \bibliographystyle{plainnat}
-\bibliography{Lu2014.bib}
+\begin{multicols}{2}
+    \bibliography{Lu2014.bib}
+\end{multicols}
 
 \includepdf[pages=1-9]{Static Liquefaction of Sands under Isotropically and K0-Consolidated Undrained Triaxial Conditions.pdf}
     
